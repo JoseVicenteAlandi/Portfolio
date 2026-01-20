@@ -38,7 +38,7 @@ h1, h2, h3, .titulos {
     border-left: 8px solid #003366;
     border-bottom: 8px solid #003366;
     margin-top: 20px;
-    background-image: url('fondo-jumbotron.jpg');
+    background-image: url('fotos/fondo-jumbotron.jpg');
     background-size: cover;
     background-position: center;
 }
