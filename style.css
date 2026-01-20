@@ -69,6 +69,7 @@ h1, h2, h3, .titulos {
 .card-daw {
     border: 1px solid #007BFF;
     transition: 0.3s;
+    margin-top: 25px;
 }
 
 .card-daw:hover {
@@ -78,6 +79,16 @@ h1, h2, h3, .titulos {
 
 .button {
     border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.button:active {
+    background-color: #003366;
+    color: white;
 }
 
 .card-img {
