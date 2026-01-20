@@ -1,0 +1,74 @@
+/* ESTILOS PROYECTO DIW - JOSE VICENTE 2º DAW */
+
+/* Fuentes del manual de estilo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F5; /* Gris fondo del PDF */
+    color: #222221; /* Negro suave */
+}
+
+
+
+h1, h2, h3, .titulos {
+    font-family: 'Poppins', sans-serif;
+    color: #003366; /* Azul oscuro corporativo */
+    font-weight: 700;
+}
+
+/* NAVBAR: Según el guion usando clases de Bootstrap */
+.navbar {
+    background-color: #222221;
+    border-bottom: 4px solid #007BFF; /* Raya azul activo */
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #007BFF; /* Cambio al azul del PDF */
+}
+
+/* JUMBOTRON: El profe lo pide en el guion */
+.jumbotron {
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 8px solid #003366;
+    border-bottom: 8px solid #003366;
+    margin-top: 20px;
+    background-image: url('fondo-jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* CARDS: Para las 3 características */
+.card-daw {
+    border: 1px solid #007BFF;
+    transition: 0.3s;
+}
+
+.card-daw:hover {
+    background-color: #f0f8ff; /* Un toque suave al pasar el ratón */
+}
+
+.button {
+    border-radius: 5px;
+}
+
+.card-img {
+    padding: 20px;
+}
+
+/* FOOTER: Requisito punto 27 (4 columnas) */
+footer {
+    background-color: #222221;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer h6 {
+    color: #007BFF;
+}
