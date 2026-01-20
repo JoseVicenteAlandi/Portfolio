@@ -5,22 +5,24 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F5F5F5; /* Gris fondo del PDF */
-    color: #222221; /* Negro suave */
+    background-color: #F5F5F5;
+    /* Gris fondo del PDF */
+    color: #222221;
+    /* Negro suave */
 }
-
-
 
 h1, h2, h3, .titulos {
     font-family: 'Poppins', sans-serif;
-    color: #003366; /* Azul oscuro corporativo */
+    color: #003366;
+    /* Azul oscuro corporativo */
     font-weight: 700;
 }
 
 /* NAVBAR: Según el guion usando clases de Bootstrap */
 .navbar {
     background-color: #222221;
-    border-bottom: 4px solid #007BFF; /* Raya azul activo */
+    border-bottom: 4px solid #007BFF;
+    /* Raya azul activo */
 }
 
 .nav-link {
@@ -28,7 +30,27 @@ h1, h2, h3, .titulos {
 }
 
 .nav-link:hover {
-    color: #007BFF; /* Cambio al azul del PDF */
+    color: #007BFF;
+    /* Cambio al azul del PDF */
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.idiomas{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.español {
+    width: 50px;
+    height: 30px;
+}
+
+.ingles {
+    width: 50px;
+    height: 30px;
 }
 
 /* JUMBOTRON: El profe lo pide en el guion */
@@ -50,7 +72,8 @@ h1, h2, h3, .titulos {
 }
 
 .card-daw:hover {
-    background-color: #f0f8ff; /* Un toque suave al pasar el ratón */
+    background-color: #f0f8ff;
+    /* Un toque suave al pasar el ratón */
 }
 
 .button {
