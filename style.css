@@ -95,6 +95,25 @@ h1, h2, h3, .titulos {
     padding: 20px;
 }
 
+/* Limitamos la altura del carrusel para que sea elegante */
+.img-carousel {
+    height: 400px; /* Altura fija para PC */
+    object-fit: cover; /* Esto evita que la imagen se estire feo */
+    filter: brightness(0.7); /* Oscurece un poco la imagen para que el texto se lea mejor */
+}
+
+.carousel-caption h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #007BFF; /* Tu azul corporativo */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .img-carousel {
+        height: 250px; /* Más bajito en móviles */
+    }
+}
+
 /* FOOTER: Requisito punto 27 (4 columnas) */
 footer {
     background-color: #222221;
