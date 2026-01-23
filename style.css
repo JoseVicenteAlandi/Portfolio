@@ -67,9 +67,38 @@ h1, h2, h3, .titulos {
 
 /* CARDS: Para las 3 características */
 .card-daw {
-    border: 1px solid #007BFF;
-    transition: 0.3s;
-    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave opcional */
+    height: 100%; /* Para que todas las cards tengan la misma altura total */
+    border: none; /* Opcional: quita el borde por defecto de bootstrap */
+}
+
+/* ESTO ES LO IMPORTANTE PARA LAS FOTOS */
+.card-img {
+    width: 100%;        /* Ocupa todo el ancho de la columna */
+    height: 400px;      /* Fuerza la altura exacta que pediste */
+    object-fit: cover;  /* MAGIA: Recorta la imagen para que rellene el hueco sin deformarse */
+    object-position: center; /* Centra el logo en el espacio */
+    border-top-left-radius: 5px;  /* Mantiene los bordes redondos de la card */
+    border-top-right-radius: 5px;
+}
+
+.titulos {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #007BFF; /* Un gris oscuro al pasar el ratón */
 }
 
 .card-daw:hover {
@@ -85,7 +114,7 @@ h1, h2, h3, .titulos {
     background-color: #007BFF;
     color: white;
 }
-
+    
 .button:active {
     background-color: #003366;
     color: white;
