@@ -76,10 +76,9 @@ h1, h2, h3, .titulos {
 .card-img {
     width: 100%;        /* Ocupa todo el ancho de la columna */
     height: 400px;      /* Fuerza la altura exacta que pediste */
-    object-fit: cover;  /* MAGIA: Recorta la imagen para que rellene el hueco sin deformarse */
+    object-fit: contain;  /* MAGIA: Recorta la imagen para que rellene el hueco sin deformarse */
     object-position: center; /* Centra el logo en el espacio */
-    border-top-left-radius: 5px;  /* Mantiene los bordes redondos de la card */
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 .titulos {
