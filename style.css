@@ -87,7 +87,7 @@ h1, h2, h3, .titulos {
 }
 
 .button {
-    background-color: #000;
+    background-color: #007BFF;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -97,7 +97,7 @@ h1, h2, h3, .titulos {
 }
 
 .button:hover {
-    background-color: #007BFF; /* Un gris oscuro al pasar el ratón */
+    background-color: #222221; /* Un gris oscuro al pasar el ratón */
 }
 
 .card-daw:hover {
@@ -110,12 +110,12 @@ h1, h2, h3, .titulos {
 }
 
 .button:hover {
-    background-color: #007BFF;
+    background-color: #003366;
     color: white;
 }
     
 .button:active {
-    background-color: #003366;
+    background-color: #222221;
     color: white;
 }
 
@@ -125,7 +125,7 @@ h1, h2, h3, .titulos {
 
 /* Limitamos la altura del carrusel para que sea elegante */
 .img-carousel {
-    height: 400px; /* Altura fija para PC */
+    height: 500px; /* Altura fija para PC */
     object-fit: cover; /* Esto evita que la imagen se estire feo */
     filter: brightness(0.7); /* Oscurece un poco la imagen para que el texto se lea mejor */
 }
