@@ -38,105 +38,209 @@
         </div>
     </nav>
 
-    <div class="container">
-        <header class="carrousel">
-            <header class="carrousel-container mt-4">
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+    <main>
+        <div class="container">
+            <header class="carrousel">
+                <header class="carrousel-container mt-4">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner shadow-lg rounded">
+                            <div class="carousel-item active">
+                                <img src="fotos/php.jpg" class="d-block w-100 img-carousel" alt="PHP Project">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark d-inline-block px-2">Backend Development</h5>
+                                    <p class="bg-dark d-inline-block px-2">Specialist in robust architectures with PHP.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/js.jpg" class="d-block w-100 img-carousel" alt="JavaScript Project">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark d-inline-block px-2">Interactivity with JS</h5>
+                                    <p class="bg-dark d-inline-block px-2">Dynamic interfaces and user experience.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/htmlycss.jpg" class="d-block w-100 img-carousel" alt="HTML and CSS">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark d-inline-block px-2">Professional Layout</h5>
+                                    <p class="bg-dark d-inline-block px-2">Adaptable and modern designs with Bootstrap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner shadow-lg rounded">
-                        <div class="carousel-item active">
-                            <img src="fotos/php.jpg" class="d-block w-100 img-carousel" alt="PHP Project">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Backend Development</h5>
-                                <p class="bg-dark d-inline-block px-2">Specialist in robust architectures with PHP.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fotos/js.jpg" class="d-block w-100 img-carousel" alt="JavaScript Project">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Interactivity with JS</h5>
-                                <p class="bg-dark d-inline-block px-2">Dynamic interfaces and user experience.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fotos/htmlycss.jpg" class="d-block w-100 img-carousel" alt="HTML and CSS">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="bg-dark d-inline-block px-2">Professional Layout</h5>
-                                <p class="bg-dark d-inline-block px-2">Adaptable and modern designs with Bootstrap.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                </header>
             </header>
-        </header>
 
-        <div class="row mt-5">
+            <div class="row mt-5">
 
-            <div class="col-md-5 offset-md-1 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Flolabs.png" class="card-img">
-                    <div class="card-body text-center">
-                        <h5 class="titulos">Flolabs</h5>
-                        <p>Connecting ideas, creating solutions.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalFlolabs">See more</button>
+                <div class="col-md-5 offset-md-1 mb-4">
+                    <div class="card card-daw">
+                        <img src="fotos/Flolabs.png" class="card-img">
+                        <div class="card-body text-center">
+                            <h5 class="titulos">Flolabs</h5>
+                            <p>Connecting ideas, creating solutions.</p>
+                            <button class="button" data-bs-toggle="modal" data-bs-target="#modalFlolabs">See
+                                more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-5 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Intercultural.jpg" class="card-img">
-                    <div class="card-body text-center">
-                        <h5 class="titulos">Intercultural Project</h5>
-                        <p>Cultural and Digital Exchange.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalIntercultural">See
-                            more</button>
+                <div class="col-md-5 mb-4">
+                    <div class="card card-daw">
+                        <img src="fotos/Intercultural.jpg" class="card-img">
+                        <div class="card-body text-center">
+                            <h5 class="titulos">Intercultural Project</h5>
+                            <p>Cultural and Digital Exchange.</p>
+                            <button class="button" data-bs-toggle="modal" data-bs-target="#modalIntercultural">See
+                                more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-5 offset-md-1 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/Optica.png" class="card-img">
-                    <div class="card-body text-center">
-                        <h5 class="titulos">Adam Optical</h5>
-                        <p>Visual and functional consistency for digital platforms.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalAdam">See more</button>
+                <div class="col-md-5 offset-md-1 mb-4">
+                    <div class="card card-daw">
+                        <img src="fotos/Optica.png" class="card-img">
+                        <div class="card-body text-center">
+                            <h5 class="titulos">Adam Optical</h5>
+                            <p>Visual and functional consistency for digital platforms.</p>
+                            <button class="button" data-bs-toggle="modal" data-bs-target="#modalAdam">See more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-5 mb-4">
-                <div class="card card-daw">
-                    <img src="fotos/fitgestion.jpg" class="card-img">
-                    <div class="card-body text-center">
-                        <h5 class="titulos">FitGestión</h5>
-                        <p>Web application for gym monitoring.</p>
-                        <button class="button" data-bs-toggle="modal" data-bs-target="#modalFrameworks">See
-                            more</button>
+                <div class="col-md-5 mb-4">
+                    <div class="card card-daw">
+                        <img src="fotos/fitgestion.jpg" class="card-img">
+                        <div class="card-body text-center">
+                            <h5 class="titulos">FitGestión</h5>
+                            <p>Web application for gym monitoring.</p>
+                            <button class="button" data-bs-toggle="modal" data-bs-target="#modalFrameworks">See
+                                more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
+
+
+        <div class="modal fade" id="modalFlolabs" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title titulos">Flolabs - Technical Details</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6><b>Flolabs: Connecting ideas, creating solutions</b></h6>
+                        <p>A comprehensive IT consulting and solutions project specialized in technical issue resolution
+                            and
+                            infrastructure optimization. The project ranges from marketing plan design and social media
+                            presence to the implementation of secure network infrastructures for businesses.</p>
+                        <h6><b>Associated Documents</b></h6>
+                        <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
+                                target="_blank">Project Presentation</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalIntercultural" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title titulos">Intercultural Project</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <h6><b>PLVS VLTRA Project: Cultural and Technological Exchange</b></h6>
+                        <p>An international collaboration initiative designed to foster cultural exchange between
+                            students
+                            from Spain and the United States. The project integrates language learning with IT through
+                            the
+                            creation of a digital blog exploring traditions and customs.</p>
+                        <h6><b>Associated Documents</b></h6>
+                        <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
+                                target="_blank">Project Presentation</a></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalAdam" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title titulos">Adam Optical</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6><b>Web Architecture and Structuring for Adam Optical</b></h6>
+                        <p>Design of a modular structure for a web portal and product catalog. The project is organized
+                            into
+                            horizontal blocks (header, content, and footer) ensuring fluid and coherent navigation. It
+                            includes the normalization of square iconography (1:1) based on W3Schools to maintain a
+                            clean
+                            and readable aesthetic on any device.</p>
+                        <h6><b>Style Guide // Documentation</b></h6>
+                        <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
+                                target="_blank">Software Requirements Analysis</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalFrameworks" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title titulos">FitGestión</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6><b>FitGestión: Optimization and Analysis of Sports Data</b></h6>
+                        <p>A comprehensive platform designed for the efficient management of sports centers and
+                            personalized
+                            athlete tracking.
+
+                            The application allows for centralized user control, training planning, and progress
+                            visualization through interactive dashboards.<br>
+
+                            Application built entirely with PHP.</p>
+
+                    </div>
+                    <div class="modal-footer"><button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -168,96 +272,6 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="modalFlolabs" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Flolabs - Technical Details</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>Flolabs: Connecting ideas, creating solutions</b></h6>
-                    <p>A comprehensive IT consulting and solutions project specialized in technical issue resolution and
-                        infrastructure optimization. The project ranges from marketing plan design and social media
-                        presence to the implementation of secure network infrastructures for businesses.</p>
-                    <h6><b>Associated Documents</b></h6>
-                    <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
-                            target="_blank">Project Presentation</a></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalIntercultural" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Intercultural Project</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>PLVS VLTRA Project: Cultural and Technological Exchange</b></h6>
-                    <p>An international collaboration initiative designed to foster cultural exchange between students
-                        from Spain and the United States. The project integrates language learning with IT through the
-                        creation of a digital blog exploring traditions and customs.</p>
-                    <h6><b>Associated Documents</b></h6>
-                    <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
-                            target="_blank">Project Presentation</a></p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="modal fade" id="modalAdam" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">Adam Optical</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>Web Architecture and Structuring for Adam Optical</b></h6>
-                    <p>Design of a modular structure for a web portal and product catalog. The project is organized into
-                        horizontal blocks (header, content, and footer) ensuring fluid and coherent navigation. It
-                        includes the normalization of square iconography (1:1) based on W3Schools to maintain a clean
-                        and readable aesthetic on any device.</p>
-                    <h6><b>Style Guide // Documentation</b></h6>
-                    <p><a href="https://drive.google.com/drive/u/0/folders/1plr7Qcmdkk2oO0-CYljZcVkXDZM4pr5e"
-                            target="_blank">Software Requirements Analysis</a></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalFrameworks" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title titulos">FitGestión</h5>
-                </div>
-                <div class="modal-body">
-                    <h6><b>FitGestión: Optimization and Analysis of Sports Data</b></h6>
-                    <p>A comprehensive platform designed for the efficient management of sports centers and personalized
-                        athlete tracking.
-
-                        The application allows for centralized user control, training planning, and progress
-                        visualization through interactive dashboards.<br>
-
-                        Application built entirely with PHP.</p>
-
-                </div>
-                <div class="modal-footer"><button type="button" class="btn btn-secondary"
-                        data-bs-dismiss="modal">Cerrar</button></div>
-            </div>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
