@@ -1,28 +1,20 @@
-/* ESTILOS PROYECTO DIW - JOSE VICENTE 2º DAW */
-
-/* Fuentes del manual de estilo */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F5F5F5;
-    /* Gris fondo del PDF */
     color: #222221;
-    /* Negro suave */
 }
 
 h1, h2, h3, .titulos {
     font-family: 'Poppins', sans-serif;
     color: #003366;
-    /* Azul oscuro corporativo */
     font-weight: 700;
 }
 
-/* NAVBAR: Según el guion usando clases de Bootstrap */
 .navbar {
     background-color: #222221;
     border-bottom: 4px solid #007BFF;
-    /* Raya azul activo */
 }
 
 .nav-link {
@@ -31,7 +23,6 @@ h1, h2, h3, .titulos {
 
 .nav-link:hover {
     color: #007BFF;
-    /* Cambio al azul del PDF */
 }
 
 .logo {
@@ -53,7 +44,6 @@ h1, h2, h3, .titulos {
     height: 30px;
 }
 
-/* JUMBOTRON: El profe lo pide en el guion */
 .jumbotron {
     padding: 40px;
     border-radius: 10px;
@@ -65,19 +55,17 @@ h1, h2, h3, .titulos {
     background-position: center;
 }
 
-/* CARDS: Para las 3 características */
 .card-daw {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave opcional */
-    height: 100%; /* Para que todas las cards tengan la misma altura total */
-    border: none; /* Opcional: quita el borde por defecto de bootstrap */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+    border: none;
 }
 
-/* ESTO ES LO IMPORTANTE PARA LAS FOTOS */
 .card-img {
-    width: 100%;        /* Ocupa todo el ancho de la columna */
-    height: 400px;      /* Fuerza la altura exacta que pediste */
-    object-fit: contain;  /* MAGIA: Recorta la imagen para que rellene el hueco sin deformarse */
-    object-position: center; /* Centra el logo en el espacio */
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
     border-radius: 5px;
 }
 
@@ -97,12 +85,11 @@ h1, h2, h3, .titulos {
 }
 
 .button:hover {
-    background-color: #222221; /* Un gris oscuro al pasar el ratón */
+    background-color: #222221;
 }
 
 .card-daw:hover {
     background-color: #f0f8ff;
-    /* Un toque suave al pasar el ratón */
 }
 
 .button {
@@ -123,26 +110,23 @@ h1, h2, h3, .titulos {
     padding: 20px;
 }
 
-/* Limitamos la altura del carrusel para que sea elegante */
 .img-carousel {
-    height: 500px; /* Altura fija para PC */
-    object-fit: cover; /* Esto evita que la imagen se estire feo */
-    filter: brightness(0.7); /* Oscurece un poco la imagen para que el texto se lea mejor */
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.7);
 }
 
 .carousel-caption h5 {
     font-family: 'Poppins', sans-serif;
-    color: #007BFF; /* Tu azul corporativo */
+    color: #007BFF;
 }
 
-/* Ajuste para móviles */
 @media (max-width: 768px) {
     .img-carousel {
-        height: 250px; /* Más bajito en móviles */
+        height: 250px;
     }
 }
 
-/* FOOTER: Requisito punto 27 (4 columnas) */
 footer {
     background-color: #222221;
     color: white;
