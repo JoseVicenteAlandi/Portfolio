@@ -14,7 +14,7 @@
             .row-cards {
                 display: flex;
                 flex-wrap: wrap;
-                align-items: stretch;
+                align-items: flex-start;
             }
             .row-cards > [class*="col-"] {
                 display: flex;
@@ -27,16 +27,9 @@
             .row-cards .card-body {
                 display: flex;
                 flex-direction: column;
-                flex: 1;
             }
             .row-cards .card-body > p:first-of-type {
-                flex: 1;
-            }
-            /* Imagen fija para que todas las cards arranquen igual */
-            .row-cards .card-img {
-                height: 220px;
-                object-fit: contain;
-                width: 100%;
+                flex: 0 0 auto;
             }
         }
 
