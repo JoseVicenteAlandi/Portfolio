@@ -14,7 +14,7 @@
             .row-cards {
                 display: flex;
                 flex-wrap: wrap;
-                align-items: flex-start;
+                align-items: stretch;
             }
             .row-cards > [class*="col-"] {
                 display: flex;
@@ -27,9 +27,16 @@
             .row-cards .card-body {
                 display: flex;
                 flex-direction: column;
+                flex: 1;
             }
             .row-cards .card-body > p:first-of-type {
-                flex: 0 0 auto;
+                flex: 1;
+            }
+            /* Imagen fija para que todas las cards arranquen igual */
+            .row-cards .card-img {
+                height: 220px;
+                object-fit: contain;
+                width: 100%;
             }
         }
 
@@ -169,7 +176,7 @@
                 </div>
                 <div class="col-md-3">
                     <h6>Email</h6>
-                    <p><span class="fa-solid fa-envelope me-2"></span> josevicentealandi@gmail.com</p>
+                    <p><span class="fa-solid fa-envelope me-2"></span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660c091503100f0503081203070a0708020f26010b070f0a4805090b">[email&#160;protected]</a></p>
                     <h6>Telf.</h6>
                     <p><span class="fa-solid fa-phone me-2"></span> 622 41 87 89</p>
                 </div>
@@ -181,20 +188,12 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Cambiar + por - al abrir/cerrar cada desplegable
-        document.querySelectorAll('.collapse').forEach(function(collapseEl) {
+        // Cambiar + por - al abrir/cerrar cada desplegable (solo los de las cards)
+        document.querySelectorAll('#infoPHP, #infoJS, #infoHTML').forEach(function(collapseEl) {
             collapseEl.addEventListener('show.bs.collapse', function() {
                 const btn = document.querySelector('[data-bs-target="#' + this.id + '"]');
                 if (btn) btn.textContent = '−';
             });
-            collapseEl.addEventListener('hide.bs.collapse', function() {
-                const btn = document.querySelector('[data-bs-target="#' + this.id + '"]');
-                if (btn) btn.textContent = '+';
-            });
-        });
-    </script>
-</body>
-
-</html>
+            collapseEl.addEventLi
