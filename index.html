@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Igualar altura de las cards en pantallas medianas y grandes */
+        @media (min-width: 768px) {
+            .row-cards {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .row-cards > [class*="col-"] {
+                display: flex;
+            }
+            .row-cards .card-daw {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .row-cards .card-body {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+            .row-cards .card-body > p:first-of-type {
+                flex: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +70,7 @@
             <p>Alumno de 2º de DAW - Especialista en Interfaces Web.</p>
         </header>
 
-        <div class="row mt-5">
+        <div class="row mt-5 row-cards">
 
             <div class="col-md-4 mb-4">
                 <div class="card card-daw">
@@ -62,7 +87,7 @@
                                 <br><b>Enfoque: </b>Preparado para trabajar en equipos internacionales y documentación técnica en inglés.</p>
                             </div>
                         </div>
-                        <button class="button" type="button" data-bs-toggle="collapse" data-bs-target="#infoPHP">
+                        <button class="button btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#infoPHP">
                             +
                         </button>
                     </div>
@@ -76,7 +101,6 @@
                         <h5 class="titulos">Desarrollo de backend</h5>
                         <p>Especialista en la creación de aplicaciones escalables y APIs REST robustas utilizando arquitectura MVC.</p>
 
-
                         <div class="collapse" id="infoJS">
                             <div class="mt-3">
                                 <hr>
@@ -84,7 +108,7 @@
                                 <br>Gestión de bases de datos con Doctrine ORM y MySQL.</p>
                             </div>
                         </div>
-                        <button class="button" type="button" data-bs-toggle="collapse" data-bs-target="#infoJS">
+                        <button class="button btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#infoJS">
                             +
                         </button>
                     </div>
@@ -106,7 +130,7 @@
                                 <br>Programación reactiva con JS.</p>
                             </div>
                         </div>
-                        <button class="button" type="button" data-bs-toggle="collapse" data-bs-target="#infoHTML">
+                        <button class="button btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#infoHTML">
                             +
                         </button>
                     </div>
@@ -146,6 +170,19 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cambiar + por - al abrir/cerrar cada desplegable
+        document.querySelectorAll('.collapse').forEach(function(collapseEl) {
+            collapseEl.addEventListener('show.bs.collapse', function() {
+                const btn = document.querySelector('[data-bs-target="#' + this.id + '"]');
+                if (btn) btn.textContent = '−';
+            });
+            collapseEl.addEventListener('hide.bs.collapse', function() {
+                const btn = document.querySelector('[data-bs-target="#' + this.id + '"]');
+                if (btn) btn.textContent = '+';
+            });
+        });
+    </script>
 </body>
 
 </html>
